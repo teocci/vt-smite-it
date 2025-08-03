@@ -2,6 +2,10 @@
  * Helper utility functions
  */
 
+export const isNull = o => o === null
+export const isUndefined = o => o === undefined
+export const isNil = o => o == null
+
 export function createElement(tag, className = '', content = '') {
     const $element = document.createElement(tag)
     if (className) $element.className = className
